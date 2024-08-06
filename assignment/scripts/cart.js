@@ -1,6 +1,9 @@
 console.log('***** Cart Functions *****');
 // Make sure to test all functions here in the JS file!
 // We want to see how you are testing your code!!!
+
+// we create two vaiables, one named basket that stores an empty array, the other is a
+// constant variable named maxItems that stores the number value 5
 let basket = [];
 const maxItems = 5;
 console.log(basket);
@@ -14,6 +17,7 @@ function addItem(item) {
 console.log( 'addItem returns:', addItem('Spaghetti'));
 console.log(basket);
 
+// listItems console.logs all items in the basket
 function listItems() {
     for (let i of basket) {
         console.log(i);
@@ -22,6 +26,7 @@ function listItems() {
 listItems();
 console.log(basket);
 
+// empty removes every item from basket
 function empty() {
     basket.splice(0, basket.length)
     return basket;
