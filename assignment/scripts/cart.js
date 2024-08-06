@@ -47,7 +47,25 @@ function isFull() {
         return false;
     }
 }
-console.log( '' );
+addItem('Strawberry');
+addItem('Water');
+addItem('Milk');
+addItem('Juice');
+// addItem('Spaghetti');
+;console.log( 'isFull returns:', isFull() );
+
+
+function removeItem(item) {
+    for (let x of basket) {
+        x.toLowerCase();
+    }
+    item.toLowerCase();
+    i = basket.indexOf(item);
+    ret = basket.splice(i,i)
+    return ret[0];
+}
+console.log( 'removeItem when given a valid item returns:', removeItem('Water') );
+console.log( 'removeItem when given an invalid item returns:0', removeItem('Watermelon') );
 
 // DO NOT MODIFY
 // Used for automated testing
