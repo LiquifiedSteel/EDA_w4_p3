@@ -38,6 +38,7 @@ function empty() {
 }
 console.log( 'empty returns:', empty() );
 
+//
 function isFull() {
     if (basket.length >= maxItems) {
         return true;
