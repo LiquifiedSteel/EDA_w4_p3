@@ -54,7 +54,8 @@ addItem('Juice');
 // addItem('Spaghetti');
 ;console.log( 'isFull returns:', isFull() );
 
-
+// removeItem searches for the input item in the basket array, if it is found, it is
+// removed, and the removed value is returned, if it is not found, it returns null
 function removeItem(item) {
     for (let x of basket) {
         x.toLowerCase();
