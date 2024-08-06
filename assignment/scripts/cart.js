@@ -2,6 +2,11 @@ console.log('***** Cart Functions *****');
 // Make sure to test all functions here in the JS file!
 // We want to see how you are testing your code!!!
 let basket = [];
+const maxItems = 5;
+console.log(basket);
+
+// function addItem adds whatever item was placed in the input into the array basket
+// it returns true to show that it ran
 function addItem(item) {
     basket.push(item);
     return true;
@@ -15,8 +20,13 @@ function listItems() {
     }
 }
 listItems();
+console.log(basket);
 
-
+function empty() {
+    basket.splice(0, basket.length)
+    return basket;
+}
+console.log( 'empty returns:', empty() );
 
 
 
