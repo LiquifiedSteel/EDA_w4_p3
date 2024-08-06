@@ -9,10 +9,15 @@ const maxItems = 5;
 console.log(basket);
 
 // function addItem adds whatever item was placed in the input into the array basket
-// it returns true to show that it ran
+// as long as the basket length is shorter than or equal to the max items, it returns
+// true to show that it ran or false to show that it didn't
 function addItem(item) {
-    basket.push(item);
-    return true;
+    if (basket.length >= maxItems) {
+        return false;
+    } else {
+        basket.push(item);
+        return true;
+    }
 }
 console.log( 'addItem returns:', addItem('Spaghetti'));
 console.log(basket);
@@ -33,7 +38,14 @@ function empty() {
 }
 console.log( 'empty returns:', empty() );
 
-
+function isFull() {
+    if (basket.length >= maxItems) {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log( '' );
 
 // DO NOT MODIFY
 // Used for automated testing
