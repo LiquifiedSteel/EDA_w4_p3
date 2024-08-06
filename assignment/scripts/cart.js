@@ -9,8 +9,12 @@ function addItem(item) {
 console.log( 'addItem returns:', addItem('Spaghetti'));
 console.log(basket);
 
-
-
+function listItems() {
+    for (let i of basket) {
+        console.log(i);
+    }
+}
+listItems();
 
 
 
