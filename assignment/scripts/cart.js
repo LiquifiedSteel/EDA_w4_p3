@@ -38,7 +38,8 @@ function empty() {
 }
 console.log( 'empty returns:', empty() );
 
-//
+// isFull returns true if basket length is greater than or equal to max items or false
+// if basket length is less than max items
 function isFull() {
     if (basket.length >= maxItems) {
         return true;
